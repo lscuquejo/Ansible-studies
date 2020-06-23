@@ -1,5 +1,3 @@
-# Ansible-studies
-
 ## Ansible documentation commnads
 
 ### Get a module specific documentation (shorten version)
