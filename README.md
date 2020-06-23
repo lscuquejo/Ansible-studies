@@ -1,3 +1,8 @@
 # Ansible-studies
 
-Ansible documentation commnads (Yes it has a documentation into ansible it self)
+## Ansible documentation commnads
+
+### Get a module specific documentation (shorten version)
+```
+ansible-doc -s <module-name>
+```
