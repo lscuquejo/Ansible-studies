@@ -4,3 +4,8 @@
 ```
 ansible-doc -s <module-name>
 ```
+
+### Get a module specific documentation (full version)
+```
+ansible-doc <module-name>
+```
