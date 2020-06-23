@@ -14,3 +14,12 @@ ansible-doc <module-name>
 ```
 man ansible-doc
 ```
+
+### List of all ansible modules
+```
+ansible-doc -l
+``` 
+you can also search on it using
+```
+/<keyword>
+```
