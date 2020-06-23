@@ -9,3 +9,8 @@ ansible-doc -s <module-name>
 ```
 ansible-doc <module-name>
 ```
+
+### "Help" list for ansible-doc
+```
+man ansible-doc
+```
