@@ -1,2 +1,7 @@
 
-test_lab_01 ansible_host=192.168.254.104
+[all:vars]
+ansible_connection=ssh
+ansible_user=lscuquejo
+
+[test_labs]
+test_lab_01 ansible_host=192.168.254.199

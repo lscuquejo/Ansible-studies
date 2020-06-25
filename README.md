@@ -23,3 +23,10 @@ you can also search on it using
 ```
 /<keyword>
 ```
+
+## Linux user management
+
+### How to give root access to a user
+```
+sudo usermod -aG sudo <user>
+```
