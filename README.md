@@ -30,3 +30,21 @@ you can also search on it using
 ```
 sudo usermod -aG sudo <user>
 ```
+
+### How to remove root password prompt for commands
+````
+sudo visudo
+```
+Write at the bottom of the file
+```
+<user> ALL=(ALL) NOPASSWD: ALL
+```
+Run the following to clear cache
+```
+sudo -k
+```
+to test run the following
+```
+sudo ls
+```
+it should not ask for a prompt password
