@@ -4,7 +4,7 @@
   tasks:
   - name: install apache2
     yum:
-      name: apache2
+      name: "{{ target_service }}"
       state: latest
   - name: create inde.htlm file
     file:
@@ -16,5 +16,5 @@
       path: /var/www/html/index.html
   - name: start apache2
     service:
-      name: apache2
+      name: "{{ target_service }}"
       state: started
