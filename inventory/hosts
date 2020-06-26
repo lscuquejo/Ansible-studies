@@ -1,7 +1,0 @@
-
-[all:vars]
-ansible_connection=ssh
-ansible_user=lscuquejo
-
-[web_servers]
-test_lab_01 ansible_host=192.168.254.199

@@ -54,8 +54,10 @@ first get the needed information
 You will need
 * Your ip and mask (ex 192.254.254.199/24) in this case your local network would be 192.254.254
 * Your gate-way (Can be found here https://osxdaily.com/2011/09/15/find-default-gateway-ip-address-mac-os-x/)
-*
 ```
 route get default |grep gateway
 ```
 
+etc/netplan/<tab>
+
+sudo netplan apply

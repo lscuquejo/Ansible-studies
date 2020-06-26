@@ -1,10 +1,10 @@
 --- # Bootstrap Webservers
-- hosts: web_servers
+- hosts: all
   become: yes
   tasks:
-  - name: install apache2
+  - name: install target package
     yum:
-      name: "{{ target_service }}"
+      name: "{{ target_package }}"
       state: latest
   - name: create inde.htlm file
     file:
@@ -14,7 +14,7 @@
     lineinfile:
       line: "{{ ansible_hostname }}"
       path: /var/www/html/index.html
-  - name: start apache2
+  - name: start target package
     service:
       name: "{{ target_service }}"
       state: started
