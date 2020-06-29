@@ -1,0 +1,10 @@
+---
+- name: install target package
+  package:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - vim
+    - git
+    - tmux
+    - ntpdate

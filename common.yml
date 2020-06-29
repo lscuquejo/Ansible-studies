@@ -1,12 +1,5 @@
 --- # Bootstrap Webservers
 - hosts: all
   become: yes
-  tasks:
-  - name: install target package
-    yum:
-      name: "{{ target_package }}"
-      state: latest
-  - name: start target package
-    service:
-      name: "{{ target_service }}"
-      state: started
+  roles: 
+  - common
